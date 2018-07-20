@@ -1,0 +1,63 @@
+Mysql -- PyMysql 
+
+connection object --> host user pwd db
+cursor object --> connection object --> conn.cursor()
+
+cursor object---> insert , execute queries , fetch /get data 
+
+cur = conn.cursor()
+cur --> cursor object
+
+sqlQ = "create table users ---------" --> string
+cur.execute(sqlQ) --> create a table in DB
+.execute() --> exceute queries
+
+insQ = "insert into users(- , - ) values (- , - )"
+cur.execute(insQ) --> insert But not completely
+conn.commit() --> insert into DB table  --> save button
+.commit() --> only for inserting records into table
+
+selectQ = "select * from <tablename>"
+cur.execute(selectQ)
+rows = cur.fetchall() --> gets all records
+for row in rows:
+	print(row)
+
+Multiple. values 
+----------------
+dict = {name:email}
+for i in dict.keys():
+	insert .... values ( i:dict[i] )
+
+fecthone() --> ???
+
+getall(students) --> all records 
+
+resgistration 
+-------
+username 
+mobile 
+password 
+email
+
+create insert select
+
+random password --> generated 
+users --> name and pwd 
+
+python automate.py khan
+oiuyf654ghjkbn
+
+name -> khan
+pwd -> oiuyf654ghjkbn
+
+
+
+
+
+
+
+
+
+
+

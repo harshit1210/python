@@ -82,16 +82,18 @@ def median():
 		b=int(input("enter the input:"))
 		list.append(b)
 	list.sort()
-
+	print(list)
 	if(a%2!=0):
 		m=(a+1)
-		v=m/2
-		print(list[v])
+		v=m//2
+		print(list[v-1])
 	else:
-		n=a/2
+		n=a//2
 		t=list[n]
-		j=list[n+1]
+		j=list[n-1]
 		d=(t+j)/2
+		print(t)
+		print(j)
 		print(d)	
 
 

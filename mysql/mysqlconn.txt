@@ -1,0 +1,57 @@
+Mysql -- installations and queries 
+----------------------------------
+
+python ++ mysql 
+
+mysql  --> install -> done 
+connector --> download -> pip
+	- mysql-python - XX do not use XX
+	- MySqlDB
+	- PyMysql
+
+pip --> get-pip.py
+
+pip install mysql-python
+pip install MySqlDB
+pip install PyMysql
+
+import <connector>
+-----------------------------------------------
+<connector>.connect() --> establish a connection
+
+conn --> connection variable
+if conn -> true 
+if no conn -> flase 
+
+try:
+	conn = MySqlDB.connect(host = "localhost" , username ="root" , ,password = "khan" , database = "students")
+
+except Exception as e:
+	print(e)
+
+finally:
+	conn.close()
+-----------------------------------------
+configuration file --> user pwd db name -> yaml , ini
+parse configuration file --> user pwd db name  --> python file
+
+ini 
+===
+[section 1]
+_____ = _____
+_____ = _____
+_____ = _____
+_____ = _____
+
+[section 2]
+_____ = _____
+_____ = _____
+_____ = _____
+_____ = _____
+
+
+
+
+
+
+
